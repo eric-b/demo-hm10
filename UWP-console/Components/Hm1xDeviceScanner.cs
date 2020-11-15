@@ -37,7 +37,7 @@ namespace DemoBluetoothLE.Components
             //  instead of DeviceInformation.FindAllAsync().
             const string bluetoothLeDevicesFilter = "(System.Devices.Aep.ProtocolId:=\"{" + BLEProtocolId + "}\")";
             DeviceInformationCollection bleDevices = await DeviceInformation.FindAllAsync(bluetoothLeDevicesFilter, RequestedProperties, DeviceInformationKind.AssociationEndpoint);
-            
+
             var result = new List<BLEDeviceInfo>(bleDevices.Count);
             for (int i = 0; i < bleDevices.Count; i++)
             {

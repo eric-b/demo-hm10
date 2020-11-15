@@ -11,7 +11,7 @@
 
   <Identity
     Name="549d8032-52d6-4b34-b224-a0d1fe954a0d"
-    Publisher="CN=eric"
+    Publisher="CN=Eric Boumendil"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="549d8032-52d6-4b34-b224-a0d1fe954a0d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
