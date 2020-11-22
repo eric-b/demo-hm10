@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- See 
+  https://docs.microsoft.com/en-us/dotnet/core/project-sdk/overview
+  https://docs.microsoft.com/en-us/dotnet/core/compatibility/wpf#winforms-and-wpf-apps-use-microsoftnetsdk
+  Starting in .NET 5.0, Windows Forms and Windows Presentation Foundation (WPF) projects should specify the .NET SDK (Microsoft.NET.Sdk) instead of Microsoft.NET.Sdk.WindowsDesktop. For these projects, setting TargetFramework to net5.0-windows and UseWPF or UseWindowsForms to true will automatically import the Windows desktop SDK. If your project targets .NET 5.0 or later and specifies the Microsoft.NET.Sdk.WindowsDesktop SDK, you'll get build warning NETSDK1137.
+  -->
+  <PropertyGroup>
+    <!-- See https://blogs.windows.com/windowsdeveloper/2020/09/03/calling-windows-apis-in-net5/ -->
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <s!-- -->See https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md 
+    <RootNamespace>DemoBluetoothLE</RootNamespace>
+    <AssemblyName>DemoBluetoothLE_hm1x_net5</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Windows.Foundation.UniversalApiContract">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.18362.0\Windows.Foundation.UniversalApiContract\8.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
